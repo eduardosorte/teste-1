@@ -50,8 +50,8 @@ function render() {
 }
 
 function movePlayer(dx, dy) {
-  const newX = player.x1 + dx1;
-  const newY = player.y1 + dy1;
+  const newX = player.x + dx;
+  const newY = player.y + dy;
 
   if (
     newX >= 0 &&
@@ -69,10 +69,10 @@ function movePlayer(dx, dy) {
 
 window.addEventListener("keydown", (e) => {
   switch (e.key) {
-    case "ArrowUp": movePlayer(0, -1); break;
-    case "ArrowDown": movePlayer(0, 1); break;
-    case "ArrowLeft": movePlayer(-1, 0); break;
-    case "ArrowRight": movePlayer(1, 0); break;
+    case "ArrowUp": movePlayer(0, -3); break;
+    case "ArrowDown": movePlayer(0, 3); break;
+    case "ArrowLeft": movePlayer(-3, 0); break;
+    case "ArrowRight": movePlayer(3, 0); break;
   }
 });
 
