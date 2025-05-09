@@ -50,8 +50,8 @@ function render() {
 }
 
 function movePlayer(dx, dy) {
-  const newX = player.x + dx;
-  const newY = player.y + dy;
+  const newX = player.x1 + dx1;
+  const newY = player.y1 + dy1;
 
   if (
     newX >= 0 &&
